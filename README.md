@@ -1,12 +1,11 @@
-Example usage of math_libs.sh
+Collection of libraries that allows for Lisp-like function calling syntax. This will abstract away some of Bash's cryptic syntax and make it easier for developers to write shell scripts.
+
+Example usage of math_libs.sh:
 
 ```bash
 #!/usr/bin/env bash
 
-source math.sh
+source math_libs.sh
 
-a=1
-b=2
-echo $(add $a $b)
 echo $(add $(power 2 3) $(add_all 1 2 3 4))
 ```
